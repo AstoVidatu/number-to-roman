@@ -14,13 +14,15 @@ var result = "";
 function convertRoman(n) {
 	for( i in roman){
 		while(n >= roman[i]){
+
 			result += i;
 			console.log('n: 	 ', n);
+			
 			n -= roman[i];
 			console.log('result: ', result);
 
 		}
 	}
-	console.log(result);
 }
 
+convertRoman(number);
